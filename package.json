@@ -4,6 +4,8 @@
   "description": "burger-js-app for Coding Bootcamp @ UNCC",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "cross-env JAWSDB_URL=mysql://root:root@localhost:3306/burgers_db node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +24,8 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.10",
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1"
   }
 }
